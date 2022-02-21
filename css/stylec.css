@@ -1,0 +1,778 @@
+@font-face {
+    font-family: 'bondie_demoregular';
+    src: url('../font/bondie_demo-webfont.woff2') format('woff2'), url('bondie_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'peenguinregular';
+    src: url('../font/peenguin-webfont.woff2') format('woff2'), url('../font/peenguin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akira_expandedsuper_bold';
+    src: url('../font/akira_expanded_demo-webfont.woff2') format('woff2'), url('akira_expanded_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nebularegular';
+    src: url('../font/nebula-regular-webfont.woff2') format('woff2'), url('../font/nebula-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dekonaregular';
+    src: url('../font/dekona-webfont.woff2') format('woff2'), url('../font/dekona-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 560px;
+    background: linear-gradient( rgba(83, 81, 81, 0.8), rgba(32, 31, 31, 0.533)), url('../image/mm.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    color: rgb(216, 211, 211);
+    line-height: 60px;
+    margin-left: 150px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fa-align-justify {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 50px;
+    visibility: hidden;
+}
+
+.fa-times {
+    visibility: hidden;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #fff;
+    z-index: 3;
+    font-size: 25px;
+    margin-top: -5px;
+    margin-right: -10px;
+}
+
+.ul1 {
+    display: flex;
+    list-style: none;
+    margin-right: 130px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 20px;
+    line-height: 60px;
+    color: rgb(216, 211, 211);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a:hover {
+    color: black;
+}
+
+nav ul ul {
+    visibility: hidden;
+    list-style: none;
+}
+
+nav ul ul li {
+    border: solid 3px rgb(177, 140, 19);
+    height: 50px;
+    line-height: 50px;
+}
+
+nav ul ul li a {
+    line-height: 40px;
+}
+
+.gal {
+    margin-left: 40px;
+}
+
+nav li:hover ul {
+    visibility: visible;
+    list-style: none;
+    margin-top: -10px;
+    color: white;
+}
+
+.contact {
+    border: solid 2px rgb(226, 180, 27);
+    padding: 5px 20px;
+}
+
+.khalifa {
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    margin-top: 80px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.specialite {
+    text-align: center;
+    color: rgb(216, 211, 211);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient( rgb(255, 255, 255), rgba(252, 252, 252, 0.533)), url('../image/chef.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    margin: 50px -135px;
+    width: 1200px;
+    height: 500px;
+}
+
+form {
+    padding-top: 10px;
+}
+
+.content1 {
+    width: 800px;
+    height: 450px;
+    margin-left: 260px;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-box {
+    width: 500px;
+    color: rgb(228, 179, 20);
+    margin-left: 30px;
+}
+
+.login-box div {
+    width: 100%;
+}
+
+form input {
+    width: 400px;
+    height: 25px;
+    font-size: 16px;
+}
+
+form button {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.login-box h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid rgb(228, 179, 20);
+    margin-bottom: 20px;
+    padding: 13px 0;
+}
+
+.textbox {
+    width: 100px;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 8px 0;
+    margin: 8 0;
+    border-bottom: 1px solid rgb(228, 179, 20);
+}
+
+.btn {
+    margin: 8px;
+}
+
+.girl {
+    margin-left: 80px;
+}
+
+.girl img {
+    height: 450px;
+    margin-top: 30px;
+}
+
+.main6 {
+    position: absolute;
+    bottom: -620px;
+    text-align: center;
+    padding-top: 30px;
+    left: 38%;
+    height: 428px;
+    border-radius: 5px;
+    width: 400px;
+    display: none;
+    background: linear-gradient( rgb(255, 255, 255), rgba(252, 252, 252, 0.533)), url('../image/chef.jpg');
+}
+
+.main6 h3 {
+    font-size: 40px;
+}
+
+.text-in {
+    width: 100%;
+    padding: 30px;
+}
+
+.text-in input {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+}
+
+.main6 button {
+    width: 85%;
+    border-radius: 3px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #f1b039;
+}
+
+.nd {
+    margin-top: -20px;
+}
+
+.blok422 {
+    margin-top: 27px;
+    background-color: rgb(29, 28, 28);
+    width: 100%;
+    height: 60px;
+}
+
+.blok422 p {
+    color: #bcb6b6;
+}
+
+.ed2 {
+    margin-left: 15px;
+    color: white;
+    letter-spacing: 35px;
+    font-weight: 900;
+}
+
+.wi2 {
+    margin-left: -8px;
+    letter-spacing: 8px;
+    color: white;
+}
+
+.fa-arrow-right {
+    position: absolute;
+    right: 0;
+    color: blue;
+}
+
+.fa-arrow-left {
+    position: absolute;
+    left: 0;
+    z-index: 5;
+    color: blue;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sous-title {
+    width: 70%;
+    height: 200px;
+    margin: 0 15%;
+}
+
+form {
+    width: 100%;
+    height: 140px;
+    margin: 0 33px;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 140px;
+}
+
+.input {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.inputv {
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+.text-input1 {
+    width: 50%;
+}
+
+.text-input2 {
+    width: 50%;
+}
+
+.text-input1 input {
+    width: 96%;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-right: 4%;
+}
+
+.text-input2 input {
+    width: 96%;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-right: 0;
+}
+
+.inputvv {
+    width: 100%;
+    height: 50px;
+}
+
+.text-input3 {
+    width: 100%;
+}
+
+.text-input3 input {
+    width: 48%;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-right: 4%;
+}
+
+.submitv {
+    margin: -30px 0 0 33px;
+    width: 40px;
+    width: 100%;
+}
+
+.submit {
+    width: 98%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #f1b039;
+}
+
+.submit h1 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.sous-form {
+    width: 100%;
+    height: 200px;
+}
+
+.container1 {
+    display: flex;
+    width: 100%;
+    height: 160px;
+}
+
+.cont1 {
+    display: flex;
+    width: 50%;
+    height: 120px;
+}
+
+.cont11 {
+    display: flex;
+    width: 66.66%;
+    height: 120px;
+}
+
+.cont2 {
+    display: flex;
+    width: 50%;
+    height: 120px;
+}
+
+.cont22 {
+    display: flex;
+    width: 66.66%;
+    height: 120px;
+}
+
+.block1 {
+    width: 50%;
+    height: 120px;
+}
+
+.block11 {
+    width: 33.33%;
+    height: 120px;
+}
+
+.block11 p {
+    line-height: 22px;
+    color: #bcb6b6;
+}
+
+.block11 h2 {
+    line-height: 45px;
+    color: #fff;
+}
+
+.block1 p {
+    line-height: 22px;
+    color: #bcb6b6;
+}
+
+.block1 h2 {
+    line-height: 45px;
+    color: #fff;
+}
+
+.block3 {
+    width: 33.33%;
+    height: 120px;
+    margin-right: 35px;
+}
+
+.block3 p {
+    line-height: 22px;
+    color: #bcb6b6;
+}
+
+.block3 h2 {
+    line-height: 45px;
+    color: #fff;
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.cont3 {
+    display: flex;
+    width: 50%;
+    height: 60px;
+}
+
+.blok4 {
+    width: 50%;
+    height: 60px;
+}
+
+.blok4 p {
+    color: #bcb6b6;
+}
+
+.blok41 {
+    width: 80%;
+    height: 60px;
+}
+
+.blok41 p {
+    color: #bcb6b6;
+}
+
+.blok411 {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 13px;
+}
+
+.im1 {
+    margin-right: 25px;
+    background-color: white;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.blok42 {
+    width: 20%;
+    height: 60px;
+}
+
+.blok42 p {
+    color: #bcb6b6;
+}
+
+.ed {
+    color: white;
+    letter-spacing: 35px;
+    font-weight: 900;
+}
+
+.wi {
+    letter-spacing: 9px;
+    color: white;
+}
+
+footer {
+    height: 480px;
+    background-color: rgb(52 52 52);
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1090px) {
+    footer {
+        height: 580px;
+        background-color: rgb(52 52 52);
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .container1 {
+        display: inline;
+    }
+    .cont1 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .cont2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:952px) {
+    footer {
+        height: 670px;
+        background-color: rgb(52 52 52);
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 120px;
+        margin-top: 30px;
+    }
+    .cont3 {
+        display: flex;
+        width: 100%;
+        height: 60px;
+        margin-top: 20px;
+    }
+    .blok4 {
+        width: 50%;
+        height: 60px;
+    }
+    .blok41 {
+        width: 70%;
+        height: 60px;
+    }
+    .blok42 {
+        width: 30%;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width:810px) {
+    .ul1 {
+        height: auto;
+        background-color: black;
+        position: absolute;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        margin-right: 0px;
+    }
+    a:hover {
+        color: rgb(255, 255, 255);
+    }
+    .gal {
+        margin-left: 18px;
+    }
+    .fa-align-justify {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .main6 {
+        margin-left: -120px;
+    }
+    .content {
+        margin: 50px -300px;
+        width: 1200px;
+        height: 500px;
+    }
+    footer {
+        height: 890px;
+        background-color: rgb(52 52 52);
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        width: 100%;
+        height: 200px;
+        margin: 0 33px;
+    }
+    .input {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .inputv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+    }
+    .text-input1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .text-input2 {
+        width: 100%;
+    }
+    .inputvv {
+        width: 100%;
+        height: 40px;
+    }
+    .text-input3 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .submitv {
+        width: 100%;
+    }
+    .submit {
+        margin: 10px 0;
+        width: 98%;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 3px;
+        font-size: 16px;
+        background-color: #f1b039;
+    }
+    .text-input3 input {
+        width: 96%;
+        height: 40px;
+        font-size: 14px;
+        border-radius: 3px;
+        margin-right: 4%;
+    }
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 380px;
+    }
+    .cont1 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 120px;
+    }
+    .cont11 {
+        display: flex;
+        width: 100%;
+        height: 120px;
+    }
+    .cont2 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 120px;
+    }
+    .cont22 {
+        display: flex;
+        width: 100%;
+        height: 120px;
+        margin-top: 10px;
+    }
+    .block1 {
+        width: 50%;
+        height: 120px;
+    }
+    .block11 {
+        width: 50%;
+        height: 120px;
+        margin-left: 240px;
+    }
+    .block3 {
+        width: 50%;
+        height: 120px;
+        margin-right: 35px;
+        margin-top: 35px;
+    }
+    .container2 {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .block11 {
+        margin-left: 170px;
+    }
+}
